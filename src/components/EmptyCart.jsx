@@ -4,28 +4,17 @@ import { NavLink } from "react-router-dom";
 
 const EmptyCart = () => {
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        margin: "10",
-      }}
-    >
+    <div className="empty-cart-container">
       <img
         src="https://i.postimg.cc/rwLwXcQC/MOVI-A2-horizontal-4.png"
         alt="Vende tu tech"
+        className="empty-cart-logo"
       />
       <Button
         to="/"
         as={NavLink}
         variant="danger"
-        style={{
-          width: "75%",
-          marginTop: "30px",
-          fontSize: "3rem",
-          fontWeight: "bold",
-        }}
+        className="empty-cart-button"
       >
         Ir a comprar
       </Button>

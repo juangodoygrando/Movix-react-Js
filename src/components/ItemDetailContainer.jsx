@@ -32,13 +32,13 @@ const ItemDetailContainer = () => {
       .finally(() => setLoading(false));
   }, []);
 
-  if(invalidItem){
-    return <div>
-      <Error/>
-    </div>
+  if (invalidItem) {
+    return (
+      <div>
+        <Error />
+      </div>
+    );
   }
-
-
 
   return (
     <div>

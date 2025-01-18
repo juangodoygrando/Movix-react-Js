@@ -1,20 +1,19 @@
 import React, { useContext, useState } from "react";
 import ItemCount from "./ItemCount";
 import { Link } from "react-router-dom";
-import { CartContext,useCart} from "../context/CartContext";
+import { CartContext, useCart } from "../context/CartContext";
 import { Button } from "react-bootstrap";
 
 const ItemDetail = ({ producto }) => {
   const [compra, SetCompra] = useState(false);
-  /* const { addToCart } = useContext(CartContext);
- */
-const {addToCart,stockEnCarrito}=useCart()
+
+  const { addToCart, stockEnCarrito } = useCart();
   const onAdd = (cantidad) => {
     SetCompra(true);
     addToCart(producto, cantidad);
   };
 
-  const stockActualizado= producto.stock - stockEnCarrito(producto.id)
+  const stockActualizado = producto.stock - stockEnCarrito(producto.id);
 
   return (
     <div className="itemDetail">

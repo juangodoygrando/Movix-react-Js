@@ -36,7 +36,7 @@ const ItemListConteiner = ({ greeting, titleTwo }) => {
       </h1>
       <h3>{titleTwo}</h3>
 
-      {loading ? <SpinnerLoader/> : <ItemList products={products} />}
+      {loading ? <SpinnerLoader /> : <ItemList products={products} />}
     </div>
   );
 };

@@ -5,16 +5,18 @@ import CartList from "./CartList";
 
 const CartView = () => {
   const { cart } = useCart();
-  return  <div>
-    {!cart.length ? (
-      <EmptyCart />
-    ) : (
-      <div>
-        <h2>Tu cesta de compra :</h2>
-        <CartList />
-      </div>
-    )}
-  </div>;
+  return (
+    <div>
+      {!cart.length ? (
+        <EmptyCart />
+      ) : (
+        <div className="cestaCompra">
+          <h2>Tu cesta de compra :</h2>
+          <CartList />
+        </div>
+      )}
+    </div>
+  );
 };
 
 export default CartView;

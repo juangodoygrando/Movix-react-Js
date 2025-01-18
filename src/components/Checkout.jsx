@@ -6,7 +6,6 @@ import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { db } from "../services/firebase";
 import { Link } from "react-router-dom";
 
-
 const Checkout = () => {
   const [orderId, setOrderId] = useState("");
   const {
@@ -56,7 +55,10 @@ const Checkout = () => {
       {orderId ? (
         <div className="container mt-5 text-center">
           <h2>Gracias por tu compra</h2>
-          <img src="https://i.postimg.cc/wxLjYmWw/MOVI-A2-horizontal-6.png" alt="imagenCompraRealizada" />
+          <img
+            src="https://i.postimg.cc/wxLjYmWw/MOVI-A2-horizontal-6.png"
+            alt="imagenCompraRealizada"
+          />
           <h3>Tu número de orden es: {orderId}</h3>
         </div>
       ) : (

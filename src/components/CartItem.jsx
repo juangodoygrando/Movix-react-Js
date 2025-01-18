@@ -1,32 +1,15 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
-import { useCart } from '../context/CartContext'
-
+import { useCart } from "../context/CartContext";
 
 const CartItem = ({ productos }) => {
-  const {removeItem}=useCart()
-
-  
-
-
-
-
-
+  const { removeItem } = useCart();
 
   return (
     <div className="cartCard">
-      <Card className="d-flex flex-row my-3 cardForm" >
-        <Card.Img
-          src={productos.imagen}
-          alt={productos.nombre}
-          style={{
-            width: "19rem",
-            height: "auto",
-            margin: "1rem",
-            border: "black",
-          }}
-        />
+      <Card className="cardForm">
+        <Card.Img src={productos.imagen} alt={productos.nombre} />
         <Card.Body>
           <div className="d-flex mb-2 ">
             <Card.Header
@@ -47,11 +30,12 @@ const CartItem = ({ productos }) => {
                 flex: "0 0 10%",
               }}
             >
-              <Button onClick={() => removeItem(productos.id)}
+              <Button
+                onClick={() => removeItem(productos.id)}
                 variant="danger"
                 style={{
                   height: "100%",
-                  fontSize:"1.5rem",
+                  fontSize: "1.5rem",
                 }}
               >
                 X
@@ -69,7 +53,9 @@ const CartItem = ({ productos }) => {
           <Card.Text style={{ fontSize: "0.8rem", margin: "1rem" }}>
             *2 años de garantía comercial
           </Card.Text>
-          <Card.Title className="text-end">Precio unitario:€{productos.precio}</Card.Title>
+          <Card.Title className="text-end">
+            Precio unitario:€{productos.precio}
+          </Card.Title>
         </Card.Body>
       </Card>
     </div>

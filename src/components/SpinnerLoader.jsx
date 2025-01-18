@@ -3,8 +3,8 @@ import { BounceLoader } from "react-spinners";
 
 const SpinnerLoader = () => {
   return (
-    <div className="loader-overlay"> 
-      <div className="loader-content"> 
+    <div className="loader-overlay">
+      <div className="loader-content">
         <BounceLoader color="rgba(46, 37, 36, 1)" size={60} />
       </div>
     </div>
