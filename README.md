@@ -44,9 +44,9 @@ Puedes ver el proyecto funcionando aquí:
 
 Aquí puedes ver algunas capturas de pantalla de la aplicación:
 
-[![Captura-de-pantalla-2024-12-16-185400.png](https://i.postimg.cc/132fmMyN/Captura-de-pantalla-2024-12-16-185400.png)](https://postimg.cc/qNckQshk)
-[![Captura-de-pantalla-2024-12-16-185502.png](https://i.postimg.cc/c4Dvj0jh/Captura-de-pantalla-2024-12-16-185502.png)](https://postimg.cc/56C9QdfQ)
-[![Captura-de-pantalla-2024-12-16-185536.png](https://i.postimg.cc/4xmYRjRg/Captura-de-pantalla-2024-12-16-185536.png)](https://postimg.cc/QFZ8p4M4)
+[![Inicio-Movix.png](https://i.postimg.cc/tRYSj2Bb/Inicio-Movix.png)](https://postimg.cc/7brM1Mvt)
+[![Detalle-Movix.png](https://i.postimg.cc/YjB0hv6H/Detalle-Movix.png)](https://postimg.cc/ctT0z4k9)
+[![Carrito-Movix.png](https://i.postimg.cc/XqCXjfyL/Carrito-Movix.png)](https://postimg.cc/K3mmQgf3)
 
 ## 🛠️ **Tecnologías Utilizadas**
 
